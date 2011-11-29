@@ -1,0 +1,13 @@
+#!/bin/sh
+
+xvidcore_postfetch()
+{
+  mv xvidcore/* .
+  rm -rf xvidcore
+}
+
+xvidcore_preconfigure()
+{
+  cd build/generic/
+  ./bootstrap.sh
+}

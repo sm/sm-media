@@ -1,0 +1,19 @@
+#!/bin/sh
+
+mp3lame_prefetch()
+{
+  typeset -xg package_url
+
+  config read \
+    key url_${package_version} \
+    from mp3lame file defaults \
+    as package_url
+
+  : package_url:${package_url:=${package_base_url}/${package_version}/lame-${package_version}.${archive_format}}
+}
+
+mp3lame_postfetch()
+{
+  mv lame-${package_version}/* .
+  rm -rf lame-${package_version}
+}

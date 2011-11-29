@@ -1,0 +1,5 @@
+version=3.99.3
+archive_format=tar.gz
+base_url=http://sourceforge.net/projects/lame/files/lame
+website=http://sourceforge.net/projects/lame
+url_3.99.3=http://sourceforge.net/projects/lame/files/lame/3.99/lame-3.99.3.tar.gz

@@ -1,0 +1,5 @@
+version=20111128
+archive_format=tar.bz2
+base_url=ftp://ftp.videolan.org/pub/pub/videolan/x264/snapshots/
+website=http://www.videolan.org/developers/x264.html
+configure_flags=--disable-asm --enable-shared

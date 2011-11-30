@@ -1,0 +1,13 @@
+#!/bin/sh
+
+opencore-amr_prefetch()
+{
+  typeset -xg package_url
+  package_url=${package_base_url}/${package_version}/${package_name}-${package_version}.${archive_format}
+}
+
+#mp3lame_postfetch()
+#{
+#  mv lame-${package_version}/* .
+#  rm -rf lame-${package_version}
+#}

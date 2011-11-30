@@ -1,0 +1,6 @@
+version=0.8.7
+archive_format=tar.bz2
+base_url=http://ffmpeg.org/releases
+website=http://ffmpeg.org/
+configure_flags=--disable-debug --disable-network --disable-ffplay --disable-ffserver --enable-pthreads --enable-fastdiv --enable-hardcoded-tables --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-libaacplus --enable-gpl --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-nonfree --enable-version3 --disable-yasm
+package_dependencies=libaacplus mp3lame x264 xvidcore

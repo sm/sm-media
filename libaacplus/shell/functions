@@ -1,0 +1,24 @@
+#!/bin/sh
+
+#x264_initialize()
+#{
+#  typeset -xg package_version
+#  [[ -z "${package_version}" || "${package_version}" =~ "-" ]] || package_version="${package_version}-2245"
+#}
+#
+#x264_prefetch()
+#{
+#  typeset -xg package_url
+#  package_url=${package_base_url}/${package_name}-snapshot-${package_version}.${archive_format}
+#}
+#
+#x264_postfetch()
+#{
+#  mv x264-snapshot-${package_version}/* .
+#  rm -rf x264-snapshot-${package_version}
+#}
+
+libaacplus_preconfigure()
+{
+  autoreconf -is >/dev/null
+}

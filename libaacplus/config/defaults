@@ -1,0 +1,6 @@
+version=2.0.2
+archive_format=tar.gz
+base_url=http://tipok.ath.cx/downloads/media/aac+/libaacplus/
+website=http://tipok.org.ua/node/17
+#configure_flags=
+make_flags=-j 1

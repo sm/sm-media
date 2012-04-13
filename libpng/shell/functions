@@ -2,7 +2,11 @@
 
 libpng_initialize()
 {
-  package define \
-    base_url="http://surfnet.dl.sourceforge.net/project/libpng/00-libpng-stable/$version"
-}
+  typeset _v
+  _v=$package_version
+  _v=${_v%.*}
+  _v=${_v/./}
 
+  package define \
+    base_url "http://downloads.sourceforge.net/project/libpng/libpng${_v}/$package_version"
+}
